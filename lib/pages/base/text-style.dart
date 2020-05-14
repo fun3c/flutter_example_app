@@ -133,27 +133,58 @@ class _TextStylePageState extends State<TextStylePage> {
             data: '赞无，后续更新。。。',
           ),
           buildInkWellItem(
-              child: DefaultTextStyle(
-                  style: TextStyle(
-                    color: Colors.red,
-                    fontSize: 20.0,
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text('- DefaultTextStyle,文本的样式默认是可以被继承的;'),
-                      Text('- 子类文本类组件未指定具体样式时可以使用Widget树中父级设置的默认样式;'),
-                      Text(
-                        '- 子类的设置自己的样式;',
-                        style: TextStyle(
-                          inherit: false,
-                          color: Colors.blue,
-                          fontSize: 18.0,
-                        ),
+            child: DefaultTextStyle(
+                style: TextStyle(
+                  color: Colors.red,
+                  fontSize: 20.0,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text('- DefaultTextStyle,文本的样式默认是可以被继承的;'),
+                    Text('- 子类文本类组件未指定具体样式时可以使用Widget树中父级设置的默认样式;'),
+                    Text(
+                      '- 子类的设置自己的样式;',
+                      style: TextStyle(
+                        inherit: false,
+                        color: Colors.blue,
+                        fontSize: 18.0,
                       ),
-                    ],
-                  )),
-              data: '赞无，后续更新。。。')
+                    ),
+                  ],
+                )),
+            data: '赞无，后续更新。。。',
+          ),
+          buildInkWellItem(
+            child: const Text(
+              '可以在Flutter应用程序中使用不同的字体',
+              style: const TextStyle(
+                fontFamily: 'MaShanZheng',
+                fontSize: 18.0,
+              ),
+            ),
+            data: '赞无，后续更新。。。',
+          ),
+          buildInkWellItem(
+            child: const Text(
+              'Use the font this text.',
+              style: const TextStyle(
+                fontFamily: 'Orbitron',
+                fontSize: 20.0,
+              ),
+            ),
+            data: '赞无，后续更新。。。',
+          ),
+          buildInkWellItem(
+            child: const Text(
+              'Use the font this text.',
+              style: const TextStyle(
+                fontFamily: 'DancingScript',
+                fontSize: 34.0,
+              ),
+            ),
+            data: '赞无，后续更新。。。',
+          ),
         ],
       ),
     );

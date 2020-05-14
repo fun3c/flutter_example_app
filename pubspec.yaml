@@ -85,3 +85,6 @@ flutter:
     - family: Orbitron
       fonts:
         - asset: assets/fonts/Orbitron/Orbitron-VariableFont_wght.ttf
+    - family: MaShanZheng
+      fonts:
+        - asset: assets/fonts/Ma_Shan_Zheng/MaShanZheng-Regular.ttf

@@ -126,7 +126,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		MFPSxSu2oiBnk9WjQsMFZqnlzTs=
+		S1YdnkTzAWy2Dp8wkCE9NOTyFZs=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -134,15 +134,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		J6+EzXvsBUDS7Uh3vCtJS/bQbPc=
+		fJybeT270gYTxn7RlG9MPBuXbVQ=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		NYNzmajJyy2fdAZ1D8s7ineDApY=
+		YcBUHwuxkfINc1nLiz2WE705UpI=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
-		SPkYTc/sw9zeGWEq93jvoqcComI=
+		ZO7xDVQwB+hzcmeCbQjuG5o91sM=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/LICENSE</key>
 		<data>
@@ -168,6 +168,10 @@
 		<data>
 		AQ6kjnnwnhwSfXvjGXHaPMsEjRU=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Muli/Muli-Italic-VariableFont_wght.ttf</key>
+		<data>
+		pmpPLOgfZq4CcUyWw2R8PqVWfSc=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Orbitron/Orbitron-VariableFont_wght.ttf</key>
 		<data>
 		FtSmfLF0oulTwjavSrj7HQNbNxw=
@@ -182,7 +186,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		Zn7Lrm31Ie+if63i80a9n6ds/UA=
+		qh/SNtjhpmI1uTDMOzGvYVqylqs=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -585,11 +589,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MFPSxSu2oiBnk9WjQsMFZqnlzTs=
+			S1YdnkTzAWy2Dp8wkCE9NOTyFZs=
 			</data>
 			<key>hash2</key>
 			<data>
-			vK1FlY91AKt4aTgVfEeSDJf46Yxez1pTXWYWc58Hid4=
+			fqacLOWDgkZj7Nsc3EGFObdIfdzWv9yX3SoEpGfRSYA=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -607,33 +611,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J6+EzXvsBUDS7Uh3vCtJS/bQbPc=
+			fJybeT270gYTxn7RlG9MPBuXbVQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			DoCZMwzqti8xacOiBk4hU1IAJsrBkJsJH7IDxFLhqdc=
+			ISelddaQpXU3xsqrbYE0Of7Q7mrgZaVLUHgHm//Rk6E=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NYNzmajJyy2fdAZ1D8s7ineDApY=
+			YcBUHwuxkfINc1nLiz2WE705UpI=
 			</data>
 			<key>hash2</key>
 			<data>
-			hSod23TOPQe4yec+KYbjbKIlosciIM+WINhZlBUJqsU=
+			Mf9cIqk6R+5RjhxUU00UyMNz0chlN0IrxKBWQ/BhJSE=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SPkYTc/sw9zeGWEq93jvoqcComI=
+			ZO7xDVQwB+hzcmeCbQjuG5o91sM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Wlp5gfuK5loUWNtT3o60RvkYQ/Cry0Kldn7k6eXlsmQ=
+			Gsn34HT8q1rGcQK8+ENorIRkMEcXFXwl/GwBZDc2Uug=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/LICENSE</key>
@@ -702,6 +706,17 @@
 			Cq49sIXXroqlAixzS1OF+nbgbvfTTpeykbVwOC6vjb8=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Muli/Muli-Italic-VariableFont_wght.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pmpPLOgfZq4CcUyWw2R8PqVWfSc=
+			</data>
+			<key>hash2</key>
+			<data>
+			GtfHhbuxpqZvRIuNZkFuiFPpS4UlkENc7wj7LZ8HZtk=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Orbitron/Orbitron-VariableFont_wght.ttf</key>
 		<dict>
 			<key>hash</key>
@@ -739,11 +754,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zn7Lrm31Ie+if63i80a9n6ds/UA=
+			qh/SNtjhpmI1uTDMOzGvYVqylqs=
 			</data>
 			<key>hash2</key>
 			<data>
-			bgUKFGsel7Z4Oh0g/PUxYHAgWUPceN2nFs3AFirTBd4=
+			vqvCcnRA1ItzcuF3ivhDnJ0Iyhjx99BPVH5oA1Mnavo=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
