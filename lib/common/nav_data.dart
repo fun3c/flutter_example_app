@@ -138,7 +138,8 @@ List navList() {
         ),
         Children(
           label: '按钮',
-          routeName: 'button',
+          routeName: 'button_page',
+          children: [],
         ),
         Children(
           label: '图片和Icon',

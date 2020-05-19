@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_example_app/common/nav_data.dart';
 import 'package:flutter_example_app/layout/code_block.dart';
+import 'package:flutter_example_app/pages/base/button_page.dart';
 import 'package:flutter_example_app/pages/base/text-style.dart';
 import 'package:flutter_example_app/pages/base_page.dart';
 
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         'examples_page': (context) => BasePage(),
         'text-style': (context) => TextStylePage(),
         'text-style-code': (context) => CodeBlock(),
+        'button_page': (context) => ButtonPage(),
       },
       home: MyHomePage(title: 'Flutter Demo'),
     );
