@@ -1,0 +1,4 @@
+#Tue May 19 19:00:10 CST 2020
+base.0=/Users/liuzhao8/workspace/mypro/flutter_example_app/build/app/intermediates/transforms/r8/release/0/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -72,3 +72,57 @@ OutlineButton.icon(
   label: buildBtnText(),
 )
 """;
+const IconButtonIntro = """
+IconButton是一个可点击的Icon，不包括文字，默认没有背景，点击后会出现背景，例如下：
+""";
+const IconButton1 = """
+```
+double _volume = 0;
+
+IconButton(
+  icon: Icon(Icons.thumb_up),
+  setState(() {
+    _volume += 10;
+  });
+  splashColor: Colors.blue,
+)
+""";
+
+const toggleBtnIntro = """
+水平切换按钮组，可点击切换取消等，例如下：
+""";
+const toggleBtn1 = """
+```
+final isSelected = <bool>[false, false, false];
+
+ToggleButtons(
+  children: [
+    Icon(Icons.ac_unit),
+    Icon(Icons.call),
+    Icon(Icons.cake),
+  ],
+  onPressed: (int index) {
+    setState(() {
+      for (int i = 0; i < isSelected.length; i++) {
+        isSelected[i] = i == index ? !isSelected[i] : false;
+      }
+    });
+  },
+  isSelected: isSelected,
+)
+""";
+
+const customBtnIntro =
+    '按钮外观可以通过其属性来定义，不同按钮属性大同小异，我们以RaisedButton为例，介绍一下常见的按钮属性，详细的信息可以查看API文档。例如下：';
+
+const customBtn1 = """
+```
+RaisedButton(
+  onPressed: () {},
+  textColor: Colors.white,
+  color: Colors.blue[600],
+  child: buildBtnText(btnText: '确定'),
+  shape: RoundedRectangleBorder(
+  borderRadius: BorderRadius.circular(20.0)),
+)
+""";

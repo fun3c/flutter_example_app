@@ -126,7 +126,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		tr6UnB1Cugulvu8+C5yZjfAoXqo=
+		b2NixhmtNaYn3qb92eejbYfevPQ=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		L8x0M+uu17+pGoSlzWRWMCu2w/0=
+		5AHHBt9VJXBEwnl+JexIysx+o68=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/LICENSE</key>
 		<data>
-		Z9FO550XrTJNQcfW4acFWr6C0xw=
+		PU3rUN91xNHSk3PSupaEN3zmrr4=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		EVB/LCYOFfcGnnSR6mHvIAUOn0o=
+		DGagnEUcVi2VLC7WsalKhjvdl6I=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -589,11 +589,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tr6UnB1Cugulvu8+C5yZjfAoXqo=
+			b2NixhmtNaYn3qb92eejbYfevPQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			VURvr1l6IX0rezkMIjwVhAzrIu/FfXDOzy2lPCM1CRo=
+			m6WZvpwZeui1DVW+6OK7QliF0LUm9Vjhw/CmuQJw5Vg=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -611,11 +611,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L8x0M+uu17+pGoSlzWRWMCu2w/0=
+			5AHHBt9VJXBEwnl+JexIysx+o68=
 			</data>
 			<key>hash2</key>
 			<data>
-			ELERNcbzqhfJ3HYvOFvazqQr+chXDADp2/UMPsc4v8s=
+			17sppwRQB9O+el6OE63h5F+fKN3ypUH0nZL6xMq5Enw=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
@@ -644,11 +644,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z9FO550XrTJNQcfW4acFWr6C0xw=
+			PU3rUN91xNHSk3PSupaEN3zmrr4=
 			</data>
 			<key>hash2</key>
 			<data>
-			CMBS8rL74ugY2BnEfAAE+Bs/sXAeP+C+xu5EAb/9BbU=
+			ZAfG0Yx93MelXAMte37Ho3zxdrtxhlx1/dtzvCtM6N8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf</key>
@@ -754,11 +754,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EVB/LCYOFfcGnnSR6mHvIAUOn0o=
+			DGagnEUcVi2VLC7WsalKhjvdl6I=
 			</data>
 			<key>hash2</key>
 			<data>
-			cSTdHhsL8PKfMoJuN3BQ8zEPW74u4rR3zcgX+ih4tf0=
+			cqVIr5c3eWc3KtHmwiqJ5R8nDVHWSCTlhAJzhLp4JQU=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
