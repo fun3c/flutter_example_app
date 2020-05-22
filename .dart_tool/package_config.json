@@ -197,10 +197,10 @@
       "name": "flutter_example_app",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.2"
     }
   ],
-  "generated": "2020-05-19T08:03:44.645916Z",
+  "generated": "2020-05-22T07:00:32.633277Z",
   "generator": "pub",
   "generatorVersion": "2.7.2"
 }

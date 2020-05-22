@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_example_app/common/buildJson.dart';
+import 'package:flutter_example_app/common/buildMarkdown.dart';
 import 'package:flutter_example_app/part/part-button.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-
-import '../../common/nav_data.dart';
 
 class ButtonPage extends StatefulWidget {
   @override
@@ -10,43 +9,12 @@ class ButtonPage extends StatefulWidget {
 }
 
 class _ButtonPageState extends State<ButtonPage> {
-  final controller = ScrollController();
   final isSelected = <bool>[false, false, false];
   double _volume = 0;
 
   @override
   Widget build(BuildContext context) {
-    Children args = ModalRoute.of(context).settings.arguments;
-
-    Widget buildIntro(String data,
-        [double L = 20.0, double T = 20.0, double R = 20.0, double B = 0]) {
-      return Container(
-        width: double.infinity,
-        padding: EdgeInsets.only(left: L, top: T, right: R, bottom: B),
-        margin: EdgeInsets.only(right: 20.0),
-        child: Text(data, style: TextStyle(fontSize: 15.0)),
-      );
-    }
-
-    Widget buildTitle(String title,
-        [double L = 20.0, double T = 20.0, double B = 2.0]) {
-      return Container(
-        width: double.infinity,
-        padding: EdgeInsets.only(left: L, top: T, bottom: B),
-        child: Text(
-          title,
-          style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
-        ),
-      );
-    }
-
-    Widget buildMarkdown(String data, double height) {
-      return Container(
-        width: double.infinity,
-        height: height,
-        child: Markdown(data: data),
-      );
-    }
+    Routers args = ModalRoute.of(context).settings.arguments;
 
     Widget buildBtnText({String btnText = 'Button'}) {
       return Text(btnText, style: TextStyle(fontSize: 16.0));
@@ -55,45 +23,43 @@ class _ButtonPageState extends State<ButtonPage> {
     return Scaffold(
       backgroundColor: Colors.grey[60],
       appBar: AppBar(
-        title: Text(args.label),
+        title: Text(args.title),
       ),
       body: SafeArea(
         child: ListView(
           children: <Widget>[
-            buildIntro(widgetIntro),
+            BuildMarkdown(widgetIntro),
             Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                buildTitle('Flat Button'),
-                buildIntro(flatButtonIntro, 20, 0, 0, 20),
+                BuildMarkdown(flatButtonIntro),
                 FlatButton(
                   onPressed: () {},
                   textColor: Colors.blue,
                   padding: EdgeInsets.all(8.0),
                   child: buildBtnText(),
                 ),
-                buildMarkdown(flatButton1, 146),
+                BuildMarkdown(flatButton1),
                 FlatButton.icon(
                   icon: const Icon(Icons.add, size: 20.0),
                   onPressed: () {},
                   textColor: Colors.blue,
                   label: buildBtnText(),
                 ),
-                buildMarkdown(flatButton2, 140),
+                BuildMarkdown(flatButton2),
               ],
             ),
             Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                buildTitle('Raised Button'),
-                buildIntro(raisedButtonIntro, 20, 0, 0, 20),
+                BuildMarkdown(raisedButtonIntro),
                 RaisedButton(
                   onPressed: () {},
                   textColor: Colors.white,
                   color: Colors.blue,
                   child: buildBtnText(),
                 ),
-                buildMarkdown(raisedButton1, 146),
+                BuildMarkdown(raisedButton1),
                 RaisedButton.icon(
                   icon: const Icon(Icons.add, size: 20.0),
                   onPressed: () {},
@@ -101,14 +67,13 @@ class _ButtonPageState extends State<ButtonPage> {
                   color: Colors.blue,
                   label: buildBtnText(),
                 ),
-                buildMarkdown(raisedButton2, 140),
+                BuildMarkdown(raisedButton2),
               ],
             ),
             Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                buildTitle('Outline Button'),
-                buildIntro(outlineButtonIntro, 20, 0, 0, 20),
+                BuildMarkdown(outlineButtonIntro),
                 OutlineButton(
                   onPressed: () {},
                   textColor: Colors.blue,
@@ -116,7 +81,7 @@ class _ButtonPageState extends State<ButtonPage> {
                       Theme.of(context).colorScheme.onSurface.withOpacity(0.12),
                   child: buildBtnText(),
                 ),
-                buildMarkdown(OutlineButton1, 146),
+                BuildMarkdown(OutlineButton1),
                 OutlineButton.icon(
                   icon: const Icon(Icons.add, size: 20.0),
                   onPressed: () {},
@@ -125,14 +90,13 @@ class _ButtonPageState extends State<ButtonPage> {
                       Theme.of(context).colorScheme.onSurface.withOpacity(0.12),
                   label: buildBtnText(),
                 ),
-                buildMarkdown(OutlineButton2, 140),
+                BuildMarkdown(OutlineButton2),
               ],
             ),
             Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                buildTitle('Icon Button'),
-                buildIntro(IconButtonIntro, 20, 0, 0, 20),
+                BuildMarkdown(IconButtonIntro),
                 IconButton(
                   onPressed: () {
                     setState(() {
@@ -143,14 +107,13 @@ class _ButtonPageState extends State<ButtonPage> {
                   tooltip: 'Increase volume by 10',
                 ),
                 Text('Volume: $_volume'),
-                buildMarkdown(IconButton1, 146),
+                BuildMarkdown(IconButton1),
               ],
             ),
             Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                buildTitle('Toggle Button'),
-                buildIntro(toggleBtnIntro, 20, 0, 0, 20),
+                BuildMarkdown(toggleBtnIntro),
                 ToggleButtons(
                   children: [
                     Icon(Icons.ac_unit),
@@ -166,14 +129,13 @@ class _ButtonPageState extends State<ButtonPage> {
                   },
                   isSelected: isSelected,
                 ),
-                buildMarkdown(toggleBtn1, 300)
+                BuildMarkdown(toggleBtn1)
               ],
             ),
             Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                buildTitle('Custom Button'),
-                buildIntro(customBtnIntro, 20, 0, 0, 20),
+                BuildMarkdown(customBtnIntro),
                 Container(
                   width: 350,
                   padding: EdgeInsets.only(left: 20.0, right: 20.0),
@@ -204,7 +166,7 @@ class _ButtonPageState extends State<ButtonPage> {
                     ],
                   ),
                 ),
-                buildMarkdown(customBtn1, 200)
+                BuildMarkdown(customBtn1)
               ],
             ),
           ],

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_example_app/common/nav_data.dart';
+import 'package:flutter_example_app/common/buildJson.dart';
 
 class BaseContent extends StatefulWidget {
   @override
@@ -13,7 +13,6 @@ class _BaseContentState extends State<BaseContent> {
       expandedItem.add(
         new InkWell(
           onTap: () {
-//            print(item.routeName);
             Navigator.of(context).pushNamed(
               item.routeName,
               arguments: item,
@@ -29,7 +28,7 @@ class _BaseContentState extends State<BaseContent> {
                   flex: 11,
                   child: Container(
                     child: Text(
-                      item.label,
+                      item.title,
                       style: TextStyle(
                         fontSize: 18.0,
                         color: Colors.black87,
@@ -67,13 +66,19 @@ class _BaseContentState extends State<BaseContent> {
 
   @override
   Widget build(BuildContext context) {
-    NavItem args = ModalRoute.of(context).settings.arguments;
+    Routers args = ModalRoute.of(context).settings.arguments;
     List items = args.children;
-    return Center(
-      child: Container(
-        padding: EdgeInsets.all(20.0),
-        child: Column(
-          children: buildExpandedItem(items),
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(args.title),
+      ),
+      body: Center(
+        child: Container(
+          padding: EdgeInsets.all(20.0),
+          child: Column(
+            children: buildExpandedItem(items), //buildExpandedItem(items),
+          ),
         ),
       ),
     );

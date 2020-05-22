@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_example_app/common/nav_data.dart';
-import 'package:flutter_example_app/layout/code_block.dart';
-import 'package:flutter_example_app/pages/base/button_page.dart';
-import 'package:flutter_example_app/pages/base/text-style.dart';
-import 'package:flutter_example_app/pages/base_page.dart';
+import 'package:flutter_example_app/routes/routes_main.dart';
+
+import 'common/buildJson.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,23 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      routes: {
-        'base_page': (context) => BasePage(),
-        'layout_page': (context) => BasePage(),
-        'container_page': (context) => BasePage(),
-        'scroll_page': (context) => BasePage(),
-        'function_page': (context) => BasePage(),
-        'event_page': (context) => BasePage(),
-        'animate_page': (context) => BasePage(),
-        'custom_page': (context) => BasePage(),
-        'http_page': (context) => BasePage(),
-        'package_page': (context) => BasePage(),
-        'globalization_page': (context) => BasePage(),
-        'examples_page': (context) => BasePage(),
-        'text-style': (context) => TextStylePage(),
-        'text-style-code': (context) => CodeBlock(),
-        'button_page': (context) => ButtonPage(),
-      },
+      routes: buildAppRoutes(),
       home: MyHomePage(title: 'Flutter Demo'),
     );
   }
@@ -49,10 +31,10 @@ class _MyHomePageState extends State<MyHomePage> {
   List comItems;
   initState() {
     super.initState();
-    comItems = navList();
+    comItems = baseRoutes;
   }
 
-  Widget buildContainer(NavItem item) {
+  Widget buildContainer(Routers item) {
     return new InkWell(
         onTap: () {
           Navigator.of(context).pushNamed(
@@ -63,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: new Container(
           alignment: Alignment.center,
           child: Text(
-            item.label,
+            item.title,
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.white,
@@ -81,11 +63,6 @@ class _MyHomePageState extends State<MyHomePage> {
     List<Widget> containers = [];
     for (var item in comItems) {
       containers.add(buildContainer(item));
-//      containers.add(buildContainer(
-//        item['label'],
-//        item['bgColor'],
-//        item['routeName'],
-//      ));
     }
     return containers;
   }

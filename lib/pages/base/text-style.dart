@@ -1,6 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_example_app/common/nav_data.dart';
+import 'package:flutter_example_app/common/buildJson.dart';
 import 'package:flutter_example_app/part/part-text-style.dart';
 
 class TextStylePage extends StatefulWidget {
@@ -20,17 +20,18 @@ class _TextStylePageState extends State<TextStylePage> {
 
   @override
   Widget build(BuildContext context) {
-    Children args = ModalRoute.of(context).settings.arguments;
-    List childrenX = args.children;
+    Routers args = ModalRoute.of(context).settings.arguments;
+    print(args);
+//    List childrenX = args.children;
 
     Widget buildInkWellItem(
         {@required Widget child, @required String data, Color color}) {
       return new InkWell(
         onTap: () {
-          Navigator.of(context).pushNamed(
-            childrenX[0].routeName,
-            arguments: CodeArgs(title: childrenX[0].label, markdownData: data),
-          );
+//          Navigator.of(context).pushNamed(
+//            childrenX[0].routeName,
+//            arguments: CodeArgs(title: childrenX[0].label, markdownData: data),
+//          );
         },
         child: Container(
           padding: EdgeInsets.all(20.0),
@@ -54,7 +55,7 @@ class _TextStylePageState extends State<TextStylePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(args.label),
+        title: Text(args.title),
       ),
       body: ListView(
         padding: EdgeInsets.only(bottom: 40.0),
