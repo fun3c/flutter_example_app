@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_example_app/common/buildJson.dart';
 import 'package:flutter_example_app/pages/base/button_page.dart';
+import 'package:flutter_example_app/pages/base/img_icon_page.dart';
 
 import '../pages/base/base_main.dart';
 import '../pages/base/text-style.dart';
@@ -26,7 +27,7 @@ Routers routeBase() {
       Routers(
         title: '图片和Icon',
         routeName: 'img_icon_page',
-        component: BasePage(),
+        component: ImageAndIconPage(),
       ),
       Routers(
         title: '单选和复选',

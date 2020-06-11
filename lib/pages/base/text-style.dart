@@ -27,12 +27,7 @@ class _TextStylePageState extends State<TextStylePage> {
     Widget buildInkWellItem(
         {@required Widget child, @required String data, Color color}) {
       return new InkWell(
-        onTap: () {
-//          Navigator.of(context).pushNamed(
-//            childrenX[0].routeName,
-//            arguments: CodeArgs(title: childrenX[0].label, markdownData: data),
-//          );
-        },
+        onTap: null,
         child: Container(
           padding: EdgeInsets.all(20.0),
           margin: EdgeInsets.only(top: 10.0),

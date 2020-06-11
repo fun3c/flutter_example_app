@@ -13,10 +13,7 @@ class _BaseContentState extends State<BaseContent> {
       expandedItem.add(
         new InkWell(
           onTap: () {
-            Navigator.of(context).pushNamed(
-              item.routeName,
-              arguments: item,
-            );
+            Navigator.of(context).pushNamed(item.routeName, arguments: item);
           },
           child: Container(
             padding: EdgeInsets.all(14.0),
