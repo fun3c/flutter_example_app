@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_example_app/common/buildJson.dart';
 import 'package:flutter_example_app/pages/base/button_page.dart';
 import 'package:flutter_example_app/pages/base/img_icon_page.dart';
+import 'package:flutter_example_app/pages/base/radio_checkbox_page.dart';
 
 import '../pages/base/base_main.dart';
 import '../pages/base/text-style.dart';
@@ -32,7 +33,7 @@ Routers routeBase() {
       Routers(
         title: '单选和复选',
         routeName: 'radio-checkbox',
-        component: BasePage(),
+        component: RadioCheckboxPage(),
       ),
       Routers(
         title: '输入框和表单',
